@@ -4,13 +4,13 @@ const operatorSelect = document.getElementById("choice");
 const formuleaArea = document.getElementById("formule");
 const resultArea = document.getElementById("result");
 
-val1input addEventListener("input", calculate);
-val2input addEventListener("input", calculate);
-operatorSelect addEventListener("change", calculate);
+val1input.addEventListener("input", calculate);
+val2input.addEventListener("input", calculate);
+operatorSelect.addEventListener("change", calculate);
 
 function calculate() {
-    const val1 = parseFloat(val1Input.value);
-    const val2 = parseFloat(val2Input.value);
+    const val1 = parseFloat(val1input.value);
+    const val2 = parseFloat(val2input.value);
     const operator = operatorSelect.value;
 
     if (isNaN(val1) || isNaN(val2)) {
