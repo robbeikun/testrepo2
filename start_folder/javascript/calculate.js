@@ -1,7 +1,7 @@
-const val1input = document.getElementById("value1");
+const val1input = document.getElementById("value");
 const val2input = document.getElementById("value2");
 const operatorSelect = document.getElementById("choice");
-const formuleaArea = document.getElementById("formule");
+const formuleaArea = document.getElementById("formula");
 const resultArea = document.getElementById("result");
 
 val1input.addEventListener("input", calculate);
@@ -44,7 +44,8 @@ function calculate() {
         resultArea.textContent = "演算子が正しくありません。";
         return;
     }
+
     // 計算式と結果を表示
     formuleaArea.textContent = `計算式：${val1} ${symbol} ${val2}`;
-    result.textContent = `計算結果：${result}`;
+    resultArea.textContent = `計算結果：${result}`;
 }
