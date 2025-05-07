@@ -44,7 +44,7 @@ function calculate() {
         resultArea.textContent = "演算子が正しくありません。";
         return;
     }
-
+    // 計算式と結果を表示
     formuleaArea.textContent = "計算式:${val1} ${symbol} ${val2}";
     result.textContent = "計算結果:${result}";
 }
